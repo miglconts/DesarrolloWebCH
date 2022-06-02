@@ -9,69 +9,78 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">LOGO HOME</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="barHeader">
+            <div class="logo"><a class="logoText" href="/index.html">killetter</a></div>
+            <nav class="navBar">
+                <ul>
+                    <li><a href="/pages/blog.html">Blog</a></li>
+                    <li><a href="/pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="/pages/tienda.html">Tienda</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- proyectos -->
-    <section>
-        <div>
-            <h2>Proyectos</h2>
-            <h3>Nombre del proyecto</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
-            <a href="proyectos.html">
-                <button>Ver Proyectos</button>
-            </a>
-        </div>
-        <div>
-            <img src="assets/img/imagen-1.png"  width="450" alt="Entrar a proyectos">
-        </div>
-    </section>
-    <!-- Blog -->
-    <section>
-        <div>
-            <img src="assets/img/imagen-2.png"  width="450" alt="Entrar a proyectos">
-        </div>
-        <div>
-            <h2>Blog</h2>
-            <h3>Nombre del artículo del blog</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
-            <a href="blog.html">
-                <button>Ver Blog</button>
-            </a>
-        </div>
-    </section>
-    <!-- Tienda -->
-    <section>
-        <div>
-            <h2>Tienda</h2>
-            <h3>Nombre del artículo del blog</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
-            <a href="tienda.html">
-                <button>Ver Tienda</button>
-            </a>
-        </div>
-        <div>
-            <img src="assets/img/imagen-7.png"  width="450" alt="Entrar a proyectos">
-        </div>
-    </section>
-<!-- Footer -->
+    <main>
+        <section class="seccPrincipal">
+            <div class="seccion">
+                <h2>Proyectos</h2>
+                <h4>Nombre del proyecto</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
+                <a href="/pages/proyectos.html">
+                    <button>Ver Proyectos</button>
+                </a>
+            </div>
+            <div class="imageSecc">
+                <img src="assets/img/imagen-1.png" class="imgPrincipal" alt="Entrar a proyectos">
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="seccPrincipal">
+            <div class="imageSecc">
+                <img src="assets/img/imagen-2.png" class="imgPrincipal" alt="Entrar a proyectos">
+            </div>
+            <div class="seccion">
+                <h2>Blog</h2>
+                <h4>Nombre del artículo del blog</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
+                <a href="pages/blog.html">
+                    <button>Ver Blog</button>
+                </a>
+            </div>
+        </section>
+        <!-- Tienda -->
+        <section class="seccPrincipal">
+            <div  class="seccion">
+                <h2>Tienda</h2>
+                <h4>Nombre del artículo del blog</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
+                <a href="/pages/tienda.html">
+                    <button>Ver Tienda</button>
+                </a>
+            </div>
+            <div class="imageSecc">
+                <img src="assets/img/imagen-7.png" class="imgPrincipal" alt="Entrar a proyectos">
+            </div>
+        </section>
+    </main>
+        <!-- Footer -->
     <footer>
-        <nav>
-            <ul>
-                <li><a href="index.html">LOGO</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="tienda.html">Tienda</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="barFooter">
+            <div class="logo">
+                <a class="logoTextFoot" href="/index.html">killetter</a>
+                <p>Letras desde 2017</p>
+            </div>
+            <nav class="navBarFooter">
+                <ul>
+                    <li><a href="/pages/blog.html">Blog</a></li>
+                    <li><a href="/pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="/pages/tienda.html">Tienda</a></li>
+                    <li><a href="/pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

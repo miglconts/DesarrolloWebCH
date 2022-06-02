@@ -1,0 +1,52 @@
+*{
+    font-family: monospace;
+    margin: 0;
+}
+h1{
+    padding-top: 80px;
+    font-size: 60px;
+    color: rebeccapurple;
+}
+.contenedor{
+    width: 500px;
+    background-color: rebeccapurple;
+}
+.caja{
+    width: 250px;
+    background-color: slateblue;
+    display: inline-block;
+    color: antiquewhite;
+    margin: 10px;
+    padding: 5px;
+}
+
+.caja1{
+    position: relative;
+    background-color: brown;
+    left: 100px;
+    z-index: 10;
+}
+
+.navBar{
+    width: 100%;
+    height: 80px;
+    background-color: slateblue;
+    position: fixed;
+    top: 0;
+    color: antiquewhite;
+    padding: 10px 100px;
+    z-index: 20;
+    margin-bottom: 10px ;
+}
+
+.navBar ul li  {
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 15px;
+}
+
+.navBar ul li a {
+    text-decoration:  none;
+    color: white;
+    display: inline-block;
+}
