@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: monospace;
+}
+
+.contenedor {
+    background-color: indianred;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.caja {
+    background-color:rgb(45, 53, 160);
+    color: antiquewhite;
+    padding: 10px;
+    margin: 10px;
+    width: 80px;
+}
+.caja1{
+    order: 11;
+}
