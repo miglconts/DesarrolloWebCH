@@ -93,21 +93,27 @@ button:hover{
     align-content: center;
 }
 
+.navBar{
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
 .navBar ul li {
     text-decoration:  none;
     display: inline-block;
-    margin: 0px 10px;
+    margin: 0px 1px;
 }
 
 .navBar ul li a {
     font-family: 'Inconsolata';
     font-variation-settings: 'wght' 300, 'wdth' 120;
     text-decoration:  none;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     color: #004A89;
     display: inline-block;
-    padding : 5px 20px;
+    padding : 5px 10px;
     border-bottom:  #00498900 1px solid ;
 }
 
@@ -129,7 +135,7 @@ button:hover{
     overflow: hidden;
     background-color: #004A89 ;
     bottom: 0;
-    height: 150px;
+    height: 170px;
     padding: 10px 0px;
     z-index: 20;
     margin-top: 10px ;
@@ -138,14 +144,15 @@ button:hover{
     justify-content: space-evenly;
     align-items: center;
 }
-.barFooter P{
+.barFooter p{
     font-size: 1rem;
     text-align: center;
     color: #e9e8e8;
 }
 .navBarFooter img {
+    padding: .8rem 0;
     width: 1.8rem;
-    margin: 0 .5rem;
+    margin: 0rem .5rem;
 }
 
 .seccPrincipal{
@@ -161,21 +168,25 @@ button:hover{
 .seccion{
     grid-area: seccion;
     width: 100%;
-    height: 400px;
+    height: auto;
     padding: 1rem 3rem;
+    margin: 1rem 0;
 }
 .seccion a{
     text-align: center;
     align-self: center;
+    margin: 1rem 0;
 }
 .imageSecc {
+    margin: 1rem 0;
+    background-color: #004A89;
     grid-area: imageSecc;
     display: block;
 }
 
 .imgPrincipal {
     width: 100%;
-    height: 600px; 
+    height: 300px; 
     object-fit: cover;
 }
 
@@ -183,10 +194,27 @@ button:hover{
 @media (min-width : 576px) {
     .barHeader{
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         align-content: center;
+    }
+    .seccPrincipal{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 
+            "seccion  seccion seccion seccion seccion seccion imageSecc imageSecc imageSecc imageSecc imageSecc imageSecc" 
+            ;
+    }
+
+    .barHeader{
+        justify-content: space-evenly;
+    }
+    .navBar ul li a {
+        font-size: 1.2rem;
+        padding : 5px 12px;
+        margin: 0 1rem;
     }
     .navBarFooter img {
         width: 2.5rem;
@@ -204,18 +232,13 @@ button:hover{
         align-content: center;
     }
     .navBar ul li a {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .logoText{
         font-size: 3rem;
     }
-    .seccPrincipal{
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: 
-            "seccion  seccion seccion seccion seccion seccion imageSecc imageSecc imageSecc imageSecc imageSecc imageSecc" 
-            ;
+    .imgPrincipal {
+        max-height:100%;
     }
     h2 {
         font-size: 3rem;
@@ -228,7 +251,7 @@ button:hover{
     }
 
     .navBarFooter img {
-        width: 3rem;
+        width: 2.5rem;
         margin: 0 2rem;
     }
 }
@@ -242,11 +265,27 @@ button:hover{
             "none  seccion seccion seccion seccion imageSecc imageSecc imageSecc imageSecc imageSecc imageSecc imageSecc" 
             ;
     }
+    .barHeader{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .navBar ul li a {
+        font-size: 1.5rem;
+    }
+
+    .imgPrincipal {
+        height: 600px;
+    }
+
     h2 {
         font-size: 3.5rem;
     }
     h3 {
         font-size: 3rem;
+    }
+
+    .navBarFooter img {
+        width: 3rem;
     }
 }
 
@@ -306,6 +345,7 @@ button:hover{
         height: 400px;
     }
 }
+
 @media (min-width : 992px) {
     .container{
         display: flex;
