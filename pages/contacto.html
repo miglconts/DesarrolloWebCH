@@ -8,8 +8,7 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <div class="barHeader">
+    <header class="barHeader">
             <div class="logo"><a class="logoText" href="../index.html">killetter</a></div>
             <nav class="navBar">
                 <ul>
@@ -19,7 +18,6 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
     </header>
     <main class="mainForm">
         <section >
@@ -28,9 +26,9 @@
         </section>
             <div class="formulario">
                 <form action="">
-                    <label for="nombre">Escrie Tu Nombre</label>
+                    <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" placeholder="Nombre" required >
-                    <label for="appellidoPaterno">Escribe Tu Apellido</label>
+                    <label for="appellidoPaterno">Apellidos</label>
                     <input type="text" name="appellidoPaterno" placeholder="Apellido Paterno" required >
                     <label for="telefono">Número Telefónico</label>
                     <input type="tel" name="telefono" id="" placeholder="222-722-8996">
@@ -38,27 +36,25 @@
                     <input type="email" name="correo" id="" placeholder="correo@ejemplo.com" required>
                     <label for="informacion">Escríbenos</label>
                     <input type="text" name="informacion" id="" placeholder="Escríbenos, nos gustará trabajar contigo" required>
-                    <input class="formButton" type="reset">
-                    <input class="formButton" type="submit">
+                    <div class="formButton-conatiner">
+                        <input class="formButton" type="reset">
+                        <input class="formButton" type="submit">
+                    </div>
                 </form>
             </div>
     </main>
         <!-- Footer -->
-    <footer>
-        <div class="barFooter">
+        <footer class="barFooter">
             <div class="logo">
-                    <a class="logoTextFoot" href="../index.html">killetter</a>
-                    <p>Letras desde 2017</p>
+                <a class="logoTextFoot" href="../index.html">killetter</a>
+                <p>Letras desde 2017</p>
             </div>
             <nav class="navBarFooter">
-                <ul>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="proyectos.html">Proyectos</a></li>
-                    <li><a href="tienda.html">Tienda</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
+                    <a href="https://www.instagram.com/killetter"><img src="../assets/icons/instagram-brands.svg" alt=""></a>
+                    <a href="https://twitter.com/killettertype"><img src="../assets/icons/twitter-brands.svg" alt=""></a>
+                    <a href="https://www.behance.net/killetter"><img src="../assets/icons/behance-brands.svg" alt=""></a>
+                    <a href="https://github.com/miglconts"><img src="../assets/icons/github-brands.svg" alt=""></a>
             </nav>
-        </div>
     </footer>
 </body>
 </html>
