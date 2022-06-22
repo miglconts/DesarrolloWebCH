@@ -1,80 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+/>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>killetter</title>
-</head>
-<body >
-    <header class="barHeader">
-            <div class="logo"><a class="logoText" href="index.html">killetter</a></div>
-            <nav class="navBar">
-                <ul>
-                    <li><a href="pages/blog.html">Blog</a></li>
-                    <li><a href="pages/proyectos.html">Proyectos</a></li>
-                    <li><a href="pages/tienda.html">Tienda</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+  </head>
+
+  <body class="container-fluid p-0" >
+    <header>
+      <nav class="navbar navbar-expand-md bg-light container-fluid justify-content-center">
+        <div class="container-fluid  col-md-11 col-lg-10  col-xl-8">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse logo "  id="navbarTogglerDemo01">
+            <a class="navbar-brand logoText" href="../index.html">killetter</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 container-fluid justify-content-end ">
+              <li class="nav-item mx-1 mx-md-2 mx-lg-4">
+                <a class="nav-link active" aria-current="page" href="#">Blog</a>
+              </li>
+              <li class="nav-item mx-1 mx-md-2 mx-lg-4">
+                <a class="nav-link" href="#">Proyectos</a>
+              </li>
+              <li class="nav-item mx-1 mx-md-2 mx-lg-4">
+                <a class="nav-link" href="#">Tienda</a>
+              </li>
+              <li class="nav-item mx-1 mx-md-2 mx-lg-4">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
     </header>
+
     <!-- proyectos -->
-    <main>
-        <section class="seccPrincipal">
-            <div class="seccion">
-                <h2>Proyectos</h2>
-                <h4>Nombre del proyecto</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
-                <a href="pages/proyectos.html">
-                    <button>Ver Proyectos</button>
-                </a>
-            </div>
-            <div class="imageSecc">
-                <img src="assets/img/imagen-1.png" class="imgPrincipal" alt="Entrar a proyectos">
-            </div>
-        </section>
-        <!-- Blog -->
-        <section class="seccPrincipal">
-            <div class="imageSecc">
-                <img src="assets/img/imagen-2.png" class="imgPrincipal" alt="Entrar a proyectos">
-            </div>
-            <div class="seccion">
-                <h2>Blog</h2>
-                <h4>Nombre del artículo del blog</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
-                <a href="pages/blog.html">
-                    <button>Ver Blog</button>
-                </a>
-            </div>
-        </section>
-        <!-- Tienda -->
-        <section class="seccPrincipal">
-            <div  class="seccion ">
-                <h2>Tienda</h2>
-                <h4>Nombre del artículo del blog</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex, deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam nemo accusantium quisquam impedit?</p>
-                <a href="pages/tienda.html">
-                    <button>Ver Tienda</button>
-                </a>
-            </div>
-            <div class="imageSecc ">
-                <img src="assets/img/imagen-7.png" class="imgPrincipal" alt="Entrar a proyectos">
-            </div>
-        </section>
-    </main>
-        <!-- Footer -->
-    <footer class="barFooter">
-            <div class="logo">
-                <a class="logoTextFoot" href="index.html">killetter</a>
-                <p>Letras desde 2017</p>
-            </div>
-            <nav class="navBarFooter">
-                    <a href="https://www.instagram.com/killetter"><img class="jello-vertical"   src="assets/icons/instagram-brands.svg" alt=""></a>
-                    <a href="https://twitter.com/killettertype"><img   class="jello-vertical"   src="assets/icons/twitter-brands.svg" alt=""></a>
-                    <a href="https://www.behance.net/killetter"><img   class="jello-vertical"   src="assets/icons/behance-brands.svg" alt=""></a>
-                    <a href="https://github.com/miglconts"><img        class="jello-vertical"   src="assets/icons/github-brands.svg" alt=""></a>
-            </nav>
-    </footer>
-</body>
+    <!-- <main>
+      <section class="seccPrincipal">
+        <div class="seccion">
+          <h2>Proyectos</h2>
+          <h4>Nombre del proyecto</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex,
+            deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam
+            nemo accusantium quisquam impedit?
+          </p>
+          <a href="pages/proyectos.html">
+            <button>Ver Proyectos</button>
+          </a>
+        </div>
+        <div class="imageSecc">
+          <img
+            src="assets/img/imagen-1.png"
+            class="imgPrincipal"
+            alt="Entrar a proyectos"
+          />
+        </div>
+      </section> -->
+      <!-- Blog -->
+      <!-- <section class="seccPrincipal">
+        <div class="imageSecc">
+          <img
+            src="assets/img/imagen-2.png"
+            class="imgPrincipal"
+            alt="Entrar a proyectos"
+          />
+        </div>
+        <div class="seccion">
+          <h2>Blog</h2>
+          <h4>Nombre del artículo del blog</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex,
+            deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam
+            nemo accusantium quisquam impedit?
+          </p>
+          <a href="pages/blog.html">
+            <button>Ver Blog</button>
+          </a>
+        </div>
+      </section> -->
+      <!-- Tienda -->
+      <!-- <section class="seccPrincipal">
+        <div class="seccion">
+          <h2>Tienda</h2>
+          <h4>Nombre del artículo del blog</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            assumenda illum magnam suscipit numquam voluptatum fuga nostrum ex,
+            deserunt quas, laboriosam voluptas minima mollitia distinctio ipsam
+            nemo accusantium quisquam impedit?
+          </p>
+          <a href="pages/tienda.html">
+            <button>Ver Tienda</button>
+          </a>
+        </div>
+        <div class="imageSecc">
+          <img
+            src="assets/img/imagen-7.png"
+            class="imgPrincipal"
+            alt="Entrar a proyectos"
+          />
+        </div>
+      </section>
+    </main> -->
+    <!-- Footer -->
+    <!-- <footer class="barFooter">
+      <div class="logo">
+        <a class="logoTextFoot" href="index.html">killetter</a>
+        <p>Letras desde 2017</p>
+      </div>
+      <nav class="navBarFooter">
+        <a href="https://www.instagram.com/killetter"
+          ><img
+            class="jello-vertical"
+            src="assets/icons/instagram-brands.svg"
+            alt=""
+        /></a>
+        <a href="https://twitter.com/killettertype"
+          ><img
+            class="jello-vertical"
+            src="assets/icons/twitter-brands.svg"
+            alt=""
+        /></a>
+        <a href="https://www.behance.net/killetter"
+          ><img
+            class="jello-vertical"
+            src="assets/icons/behance-brands.svg"
+            alt=""
+        /></a>
+        <a href="https://github.com/miglconts"
+          ><img
+            class="jello-vertical"
+            src="assets/icons/github-brands.svg"
+            alt=""
+        /></a>
+      </nav>
+    </footer> -->
+  </body>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+  crossorigin="anonymous"
+></script>
 </html>
