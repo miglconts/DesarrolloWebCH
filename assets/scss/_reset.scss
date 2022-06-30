@@ -1,0 +1,50 @@
+*{
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin-top: 100px;
+    background-color: $secondary;
+}
+
+h2{
+    font-variation-settings: 'wght' 700 ;
+    font-size: 3.5rem;
+    color: $primary;
+}
+h3{
+    font-variation-settings: 'wght' 600 ;
+    font-size: 2rem;
+    color: #004A89;
+}
+h4{
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #004A89;
+    font-variation-settings: 'wght' 400 ;
+}
+p{
+    font-size: 1rem;
+    color: #004A89;
+    font-variation-settings: 'wght' 200 ;
+}
+
+@media (min-width : 576px) {
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width : 992px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+}

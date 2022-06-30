@@ -1,0 +1,21 @@
+{
+  "name": "desarrollowebch",
+  "version": "1.0.0",
+  "description": "Repositorio del curso de Desarrollo Web ### Maqueta HTML [Link a la maqueta html con portafolio, Blog y Tienda de fuentes](https://miglconts.github.io/DesarrolloWebCH/index.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass -w assets/scss/style.scss assets/css/style.css   "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miglconts/DesarrolloWebCH.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miglconts/DesarrolloWebCH/issues"
+  },
+  "homepage": "https://github.com/miglconts/DesarrolloWebCH#readme"
+}
