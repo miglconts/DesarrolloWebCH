@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+/>
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Contacto</title>
 </head>
@@ -19,29 +25,39 @@
                 </ul>
             </nav>
     </header>
-    <main class="mainForm">
-        <section >
-            <h3>contacto@killetter.com</h3>
-            <p class="address">14115 Jazmín Puebla, Puebla, 72493 México</p>
-        </section>
-            <div class="formulario">
-                <form action="">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" placeholder="Nombre" required >
-                    <label for="appellidoPaterno">Apellidos</label>
-                    <input type="text" name="appellidoPaterno" placeholder="Apellido Paterno" required >
-                    <label for="telefono">Número Telefónico</label>
-                    <input type="tel" name="telefono" id="" placeholder="222-722-8996">
-                    <label for="correo">Correo</label>
-                    <input type="email" name="correo" id="" placeholder="correo@ejemplo.com" required>
-                    <label for="informacion">Escríbenos</label>
-                    <input type="text" name="informacion" id="" placeholder="Escríbenos, nos gustará trabajar contigo" required>
-                    <div class="formButton-conatiner">
-                        <input class="formButton" type="reset">
-                        <input class="formButton" type="submit">
-                    </div>
-                </form>
-            </div>
+    <main class="container-fluid col-10 d-flex flex-column">
+      <section class="mt-3 align-self-center text-center">
+        <h3 class="font-monospace ">contacto@killetter.com</h3>
+        <p class="font-monospace ">14115 Jazmín Puebla, Puebla, 72493 México</p>
+      </section>
+      <form class="mt-3 d-flex flex-column mb-5" action="">
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" placeholder="Apellidos" aria-label="Apellidos">
+          </div>
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="exampleFormControlInput1" class="form-label">Email </label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="exampleFormControlInput1" class="form-label">Número Telefónico </label>
+          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="222-222-4545">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Escríbenos</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <div class="d-flex flex-column  align-self-center flex-md-row  ">
+          <input class="btn btn-outline-primary btn-md px-5 align-self-center my-2 mx-4" type="reset" />
+          <input class="btn btn-outline-primary btn-md px-5 align-self-center my-2 mx-4" type="submit" />
+        </div>
+      </form>
     </main>
         <!-- Footer -->
         <footer class="barFooter">
@@ -57,4 +73,9 @@
             </nav>
     </footer>
 </body>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"
+></script>
 </html>
