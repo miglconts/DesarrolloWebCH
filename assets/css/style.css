@@ -149,6 +149,7 @@ button:hover {
 }
 .logoTextFoot:hover {
   animation: variation 2s ease;
+  color: #fbfbfb;
 }
 
 .barFooter {
