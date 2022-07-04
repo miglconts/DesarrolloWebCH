@@ -23,7 +23,7 @@ main {
   background-color: #fbfbfb;
 }
 
-h2 {
+h1, h2 {
   font-variation-settings: "wght" 700;
   font-size: 3.5rem;
   color: #004A89;
@@ -49,6 +49,9 @@ p {
 }
 
 @media (min-width: 576px) {
+  h1, h2 {
+    font-size: 3rem;
+  }
   h2 {
     font-size: 3rem;
   }
@@ -57,6 +60,9 @@ p {
   }
 }
 @media (min-width: 992px) {
+  h1, h2 {
+    font-size: 3.5rem;
+  }
   h2 {
     font-size: 3.5rem;
   }
@@ -84,16 +90,20 @@ button:hover {
   color: #fefffe;
 }
 
-.logoText {
+.logoText, .logoTextFoot {
   font-family: "Inconsolata";
   font-variation-settings: "wght" 100, "wdth" 120;
   text-decoration: none;
   color: #004A89;
   font-size: 2.5rem;
 }
-.logoText:hover {
+.logoText:hover, .logoTextFoot:hover {
   animation: variation 2s ease;
   /* font-variation-settings: 'wght' 500, 'wdth' 120; */
+}
+
+.logoTextFoot {
+  color: #fbfbfb;
 }
 
 .barHeader {
@@ -111,6 +121,25 @@ button:hover {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
+}
+
+.barFooter {
+  overflow: hidden;
+  background-color: #004A89;
+  bottom: 0;
+  height: 170px;
+  padding: 10px 0px;
+  z-index: 20;
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.barFooter p {
+  font-size: 1rem;
+  text-align: center;
+  color: #fbfbfb;
 }
 
 .navBar {
@@ -140,37 +169,6 @@ button:hover {
   border-bottom: 1px solid #004A89;
 }
 
-.logoTextFoot {
-  font-family: "Inconsolata";
-  font-variation-settings: "wght" 100, "wdth" 120;
-  text-decoration: none;
-  color: #fbfbfb;
-  font-size: 2.5rem;
-}
-.logoTextFoot:hover {
-  animation: variation 2s ease;
-  color: #fbfbfb;
-}
-
-.barFooter {
-  overflow: hidden;
-  background-color: #004A89;
-  bottom: 0;
-  height: 170px;
-  padding: 10px 0px;
-  z-index: 20;
-  margin-top: 10px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.barFooter p {
-  font-size: 1rem;
-  text-align: center;
-  color: #fbfbfb;
-}
-
 .navBarFooter img {
   padding: 0.8rem 0;
   width: 1.8rem;
@@ -192,7 +190,7 @@ button:hover {
     margin: 0 1rem;
     font-size: 1.2rem;
   }
-  .logoText {
+  .logoText, .logoTextFoot {
     font-size: 3rem;
   }
   .navBarFooter img {

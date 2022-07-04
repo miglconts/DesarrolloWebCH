@@ -46,10 +46,10 @@ form label{
     border: none;
     border:  $primary 1.5px solid ;
     cursor: pointer;
-    &:hover{
-        background-color: $primary;
-        color: #fefffe;
-    }
+        &:hover{
+            background-color: $primary;
+            color: #fefffe;
+        }
 }
 
 

@@ -9,29 +9,35 @@ main{
     background-color: $secondary;
 }
 
-h2{
+h1{
     font-variation-settings: 'wght' 700 ;
     font-size: 3.5rem;
     color: $primary;
 }
+h2{
+    @extend h1;
+}
 h3{
     font-variation-settings: 'wght' 600 ;
     font-size: 2rem;
-    color: #004A89;
+    color: $primary;
 }
 h4{
     margin: 1rem 0;
     font-size: 2rem;
-    color: #004A89;
+    color: $primary;
     font-variation-settings: 'wght' 400 ;
 }
 p{
     font-size: 1rem;
-    color: #004A89;
+    color: $primary;
     font-variation-settings: 'wght' 200 ;
 }
 
 @media (min-width : 576px) {
+    h1 {
+        font-size: 3rem;
+    }
     h2 {
         font-size: 3rem;
     }
@@ -41,6 +47,9 @@ p{
 }
 
 @media (min-width : 992px) {
+    h1{
+        font-size: 3.5rem;
+    }
     h2 {
         font-size: 3.5rem;
     }
