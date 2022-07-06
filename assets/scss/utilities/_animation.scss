@@ -1,3 +1,4 @@
+@import '../components/fonts';
 .jello-vertical:hover {
 	animation: jello-vertical 2s  both;
 }
@@ -28,12 +29,12 @@
 
 @keyframes variation {
     0% {
-        font-variation-settings: 'wght' 100, 'wdth' 120;
+        font-variation-settings: map-get($font-weights, "thin"), map-get($font-widths, "narrow" );
     }
     50% {
-        font-variation-settings: 'wght' 900, 'wdth' 120;
+        font-variation-settings: map-get($font-weights, "black" ), map-get($font-widths, "narrow" );
     } 
     100% {
-        font-variation-settings: 'wght' 100, 'wdth' 120;
+        font-variation-settings: map-get($font-weights, "thin" ), map-get($font-widths, "narrow" );
     }
 }

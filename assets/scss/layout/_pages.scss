@@ -1,14 +1,14 @@
+@import '../utilities/mixins';
+@import '../utilities/colors';
+@import '../components/fonts';
+
 /* pages */
 .container{
-    display: flex;
-    flex-flow: column wrap;
+    @include flexColumCenter();
 }
 .tarjeta{
     background-color: $cards;
-    align-self: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    @include flexColumCenter();
     align-items: stretch;
     margin: 1rem 1rem;
     padding: 2rem 2rem;
@@ -21,9 +21,8 @@
 }
 .infoProject{
     font-family: 'Open Sans';
-    font-style: italic;
     font-size: 1rem;
-    font-variation-settings: 'wght' 300;
+    font-variation-settings: map-get($font-weights, "light" );
     color: $primary;
     margin-bottom: 1rem;
 }
@@ -41,8 +40,7 @@
 }
 @media (min-width : 576px) {
     .container{
-        display: flex;
-        flex-flow: row wrap;
+        @include flexRowCenter();
         justify-content: center;
         align-items: stretch;
     }

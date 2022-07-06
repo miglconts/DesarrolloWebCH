@@ -1,13 +1,13 @@
+@import '../utilities/mixins';
+@import '../utilities/colors';
+@import 'fonts';
+
 /* form */
 .mainForm{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    @include flexColumCenter();
 }
 .formulario{
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+    @include flexColumCenter();
     width: 60%;
     margin-bottom: 4rem;
 }
@@ -28,9 +28,7 @@ form label{
 }
 
 .formButton-conatiner{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexColumCenter();
 }
 
 .formButton{
@@ -40,7 +38,7 @@ form label{
     background-color:#fefffe00;
     color: $primary;
     font-size: 1rem;
-    font-variation-settings: 'wght' 400 ;
+    font-variation-settings: map-get($font-weights, "regular" );
     padding: .3rem 2rem;
     border-radius: 30px;
     border: none;

@@ -1,10 +1,4 @@
-@import  'colors';
-@import  'fonts';
-@import  'reset';
-@import  'buttons';
-@import  'headerFooter';
-@import  'index';
-@import  'pages';
-@import  'form';
-@import  'animation';
+@import  'components/buttons', 'components/fonts', 'components/form';
+@import  'utilities/colors', 'utilities/mixins', 'utilities/animation';
+@import  'layout/reset', 'layout/headerFooter', 'layout/index', 'layout/pages';
 

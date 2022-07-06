@@ -1,13 +1,17 @@
+@import '../utilities/mixins';
+@import '../utilities/colors';
+@import '../utilities/extend';
+@import '../components/fonts';
+
 // Header
 .logoText{
     font-family: 'Inconsolata';
-    font-variation-settings: 'wght' 100, 'wdth' 120;
+    font-variation-settings: map-get($font-weights, "thin" ), map-get($font-widths, "narrow" );
     text-decoration: none;
     color: $primary;
     font-size: 2.5rem;
     &:hover{
         animation: variation 2s ease ;
-        /* font-variation-settings: 'wght' 500, 'wdth' 120; */
     }
 }
 //Extend
@@ -24,13 +28,9 @@
     width: 100%;
     height: 100px;
     padding: 10px 10px;
-    z-index: 20;
     margin-bottom: 10px ;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
+    @include flexColumCenter();
+    flex-wrap: nowrap;
 }
 
 .barFooter{
@@ -41,10 +41,7 @@
     padding: 10px 0px;
     z-index: 20;
     margin-top: 10px ;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flexColumCenter();
         p {
             font-size: 1rem;
             text-align: center;
@@ -53,10 +50,7 @@
 }
 
 .navBar{
-    justify-content: space-evenly;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
+    @include flexColumCenter();
         ul li {
             text-decoration:  none;
             display: inline-block;
@@ -64,16 +58,16 @@
         }
             a {
                 font-family: 'Inconsolata';
-                font-variation-settings: 'wght' 300, 'wdth' 120;
+                font-variation-settings: map-get($font-weights, "light" ), map-get($font-widths, "narrow" );
                 text-decoration:  none;
-                font-size: 14px;
+                font-size: 16px;
                 text-align: center;
                 color: $primary;
                 display: inline-block;
                 padding : 5px 10px;
                 border-bottom:  #00498900 1px solid  ;
                 &:hover{
-                    font-variation-settings: 'wght' 500, 'wdth' 120;
+                    font-variation-settings: map-get($font-weights, "medium" ), map-get($font-widths, "narrow" );
                     border-bottom:  1px solid  $primary;
                 }
             }
@@ -87,12 +81,7 @@
 
 @media (min-width : 576px) {
     .barHeader{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        justify-content: space-evenly;
+        @include flexColumCenter();
     }
     .navBar ul li a {
         font-size: 1.2rem;
@@ -113,13 +102,9 @@
         font-size: 3rem;
     }
     .barFooter{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        align-content: center;
+        @include flexColumCenter();
             p{
-                text-align: left;;
+                text-align: center;
             }
     }
 
@@ -127,8 +112,7 @@
 
 @media (min-width : 992px) {
     .barHeader{
-        flex-direction: row;
-        justify-content: space-evenly;
+        @include flexRowCenter();
     }
     .navBar ul li a {
         font-size: 1.5rem;
@@ -136,5 +120,11 @@
 
     .navBarFooter img {
         width: 3rem;
+    }
+    .barFooter{
+        @include flexRowCenter();
+            p{
+                text-align: center;
+            }
     }
 }
