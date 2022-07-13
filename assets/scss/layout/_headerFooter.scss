@@ -80,9 +80,9 @@
 }
 
 @media (min-width : 576px) {
-    .barHeader{
-        @include flexColumCenter();
-    }
+    // .barHeader{
+    //     @include flexColumCenter();
+    // }
     .navBar ul li a {
         font-size: 1.2rem;
         padding : 5px 12px;
