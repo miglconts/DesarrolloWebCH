@@ -37,6 +37,14 @@ p{
     font-variation-settings: map-get($font-weights, "hair" ) ;
 }
 
+.titulo{
+    @include flexRowCenter();
+    text-align: left;
+    width: 100%;
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+}
+
 @media (min-width : 576px) {
     h1 {
         font-size: 3rem;

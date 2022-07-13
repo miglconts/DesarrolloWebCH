@@ -239,6 +239,19 @@ p {
   font-variation-settings: "wght" 200;
 }
 
+.titulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+  width: 100%;
+  margin: 0rem 0rem;
+  padding: 0rem 0rem;
+}
+
 @media (min-width: 576px) {
   h1, h2 {
     font-size: 3rem;
